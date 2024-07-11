@@ -1,0 +1,32 @@
+.Footer {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 2.25rem;
+  gap: 0.5rem;
+
+  .Command {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    max-width: 10rem;
+    cursor: pointer;
+
+    .Name {
+      display: flex;
+      flex: 1;
+      background-color: var(--secondary-color);
+      color: var(--bg-color);
+    }
+
+    &:hover {
+      .Name {
+        background-color: var(--secondary-accent-color);
+      }
+    }
+  }
+}

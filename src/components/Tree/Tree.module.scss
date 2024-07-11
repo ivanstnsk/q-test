@@ -1,0 +1,80 @@
+.Tree {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  padding: 0px 0.5rem;
+
+  .RootNode {
+    font-size: 2rem;
+    color: var(--text-accent-color);
+    width: min-content;
+    background-color: var(--secondary-accent-color);
+    padding: 0 1rem 0.25rem 1rem;
+  }
+
+  .Nodes {
+    padding-left: 1.25rem;
+  }
+
+  .Ul {
+    list-style: none;
+    line-height: 2rem;
+    margin-left: 1.62rem;
+
+    &.Root {
+      margin-left: 0;
+
+      > .Li {
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    .Li {
+      font-size: 2rem;
+      position: relative;
+      color: var(--secondary-accent-color);
+      cursor: pointer;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: -1.62rem;
+        top: -0.5rem;
+        display: block;
+        border-left: 0.25rem solid var(--secondary-accent-color);
+        height: 1.5rem;
+        border-bottom: 0.25rem solid var(--secondary-accent-color);
+        width: 1.62rem;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: -1.62rem;
+        top: 0.7rem;
+        bottom: 0;
+        display: block;
+        border-left: 0.25rem solid var(--secondary-accent-color);
+        height: 100%;
+      }
+      &:last-child {
+        padding-bottom: 0;
+
+        &:after {
+          display: none;
+        }
+      }
+
+      .Span {
+        &:hover {
+          background-color: var(--secondary-accent-color);
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.MenuDropdown {
+  width: 512px;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: 99;
+  display: none;
+  padding: 1rem 0.5rem;
+
+  .Ul {
+    width: 100%;
+    list-style: none;
+    border: 0.25rem solid var(--bg-color);
+    padding: 0.5rem 0.25rem;
+
+    .Li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 2rem;
+      color: var(--bg-color);
+      cursor: pointer;
+
+      span:first-child {
+        &::first-letter {
+          color: var(--text-accent-color);
+        }
+      }
+
+      &:hover {
+        background-color: var(--bg-color);
+        color: var(--bg-accent-color);
+      }
+    }
+  }
+}

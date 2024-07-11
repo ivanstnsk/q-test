@@ -1,0 +1,19 @@
+.PanelHeader {
+  width: 100%;
+  max-height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-accent-color);
+
+  H1 {
+    color: var(--primary-color);
+    font-size: 2.25rem;
+    padding: 0 1rem;
+
+    &.Focused {
+      background-color: var(--primary-color);
+      color: var(--secondary-accent-color);
+    }
+  }
+}

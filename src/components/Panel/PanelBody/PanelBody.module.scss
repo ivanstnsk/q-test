@@ -1,0 +1,11 @@
+.PanelBody {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  border: 0.125rem solid var(--secondary-accent-color);
+  border-top: none;
+  margin: 0 0.25rem;
+}

@@ -1,0 +1,29 @@
+@use "sass:map";
+
+@import "./_reset.scss";
+@import "./_vars";
+
+:root {
+  --primary-color: #{map-get($colors, "primary")};
+  --secondary-color: #{map-get($colors, "secondary")};
+  --secondary-accent-color: #{map-get($colors, "secondary-accent")};
+  --bg-color: #{map-get($colors, "bg")};
+  --bg-accent-color: #{map-get($colors, "bg-accent")};
+  --text-color: #{map-get($colors, "text")};
+  --text-accent-color: #{map-get($colors, "text-accent")};
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+main {
+  max-width: #{$content-width};
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

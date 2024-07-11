@@ -1,0 +1,12 @@
+.Main {
+  .Panels {
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+}

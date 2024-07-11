@@ -1,0 +1,51 @@
+.Navigator {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--secondary-accent-color);
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.25rem;
+
+  .Col {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--primary-color);
+    padding: 0 0.5rem;
+
+    .Header {
+      color: var(--text-accent-color);
+      font-size: 2rem;
+    }
+
+    .Files {
+      width: 100%;
+      line-height: 2rem;
+      list-style: none;
+
+      .File {
+        width: 100%;
+        font-size: 2rem;
+        color: var(--secondary-accent-color);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--secondary-accent-color);
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
