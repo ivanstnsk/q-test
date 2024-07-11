@@ -32,6 +32,7 @@ const Terminal: FC<Props> = ({ id, className = "" }) => {
     <div id={id} className={`${s.Terminal} ${className}`}>
       C:\
       <input
+        aria-label="terminal input"
         className={s.Input}
         type="text"
         placeholder={isPlaceholder ? ">" : ""}
